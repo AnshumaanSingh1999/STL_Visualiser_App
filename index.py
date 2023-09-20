@@ -2,9 +2,14 @@ from visualiser import adder
 from tkinter import *
 from tkinter import ttk, filedialog
 from tkinter.filedialog import askopenfile
+from tkinter import messagebox
+
 import os
 
 root = Tk()
+
+filepath=""
+
 
 root.title("Learning Tkinter")
 root.geometry('350x200')
@@ -33,10 +38,16 @@ def open_file():
 		
 		
 def indexfunc():
-	print("button pressed")
-	x=filepath
-	print("values accessed")
-	print(x)
-	adder(x)
+	if filepath=="":
+		error()
+	else:
+		print("button pressed")
+		x=filepath
+		print("values accessed")
+		print(x)
+		adder(x)
+
+def error():
+	messagebox.showerror('Python Error', 'Error: Please select the file first!')
 	
 root.mainloop()
