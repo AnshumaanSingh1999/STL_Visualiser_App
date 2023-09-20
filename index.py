@@ -11,7 +11,7 @@ root = Tk()
 filepath=""
 
 
-root.title("Learning Tkinter")
+root.title("STL Visualiser")
 root.geometry('350x200')
 
 
@@ -48,6 +48,6 @@ def indexfunc():
 		adder(x)
 
 def error():
-	messagebox.showerror('Python Error', 'Error: Please select the file first!')
+	messagebox.showerror('STL Visualiser Error', 'Error: Please select the file first!')
 	
 root.mainloop()
