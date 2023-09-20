@@ -48,6 +48,7 @@ def indexfunc():
 		adder(x)
 
 def error():
+	print("File not selected")
 	messagebox.showerror('STL Visualiser Error', 'Error: Please select the file first!')
 	
 root.mainloop()
