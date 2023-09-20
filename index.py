@@ -9,13 +9,9 @@ root = Tk()
 root.title("Learning Tkinter")
 root.geometry('350x200')
 
-num1=StringVar()
-num2=StringVar()
 
 lbl = Label(root, text = "STL File:")
 lbl.grid()
-# txt1 = Entry(root, width=10,textvariable=num1)
-# txt1.grid(column =1, row =0)
 res=Label(root)
 res.grid(column=1,row=0)
 
@@ -42,11 +38,5 @@ def indexfunc():
 	print("values accessed")
 	print(x)
 	adder(x)
-	# res.config(text=r)
 	
-
-
-
-
-
 root.mainloop()

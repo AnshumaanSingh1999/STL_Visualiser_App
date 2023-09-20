@@ -1,14 +1,14 @@
 import vtk
 import re
 
-def adder(n1):
+def adder(s):
     print("function called")
-    s=n1
     print(s)
     re.sub(r"\\","/",s)
     print(s)
     # return s
     reader = vtk.vtkSTLReader()
+    # reader.SetFileName(r"C:\Users\HP\Downloads\Cube.stl")
     reader.SetFileName(s)
 
     # Create a mapper
@@ -35,10 +35,7 @@ def adder(n1):
     # Render and interact
     renderWindow.Render()
     renderWindowInteractor.Start()
+    print("Visuals generated")
     
-
-    
-
 if __name__ == "__main__":
     adder()
-
