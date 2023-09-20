@@ -41,7 +41,7 @@ def indexfunc():
 	x=filepath
 	print("values accessed")
 	print(x)
-	r=adder(x)
+	adder(x)
 	# res.config(text=r)
 	
 
