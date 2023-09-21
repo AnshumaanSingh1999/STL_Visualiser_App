@@ -25,6 +25,8 @@ btn1 = Button(root, text ='Select File', command = lambda:open_file())
 btn1.grid(column=2, row=0)
 btn = Button(root, text = "Visualise" , fg = "red", command=lambda:indexfunc())
 btn.grid(column=3, row=0)
+btnr = Button(root, text = "Refresh" , fg = "red", command=lambda:refresh())
+btnr.grid(column=4, row=0)
 
 
 
@@ -50,5 +52,10 @@ def indexfunc():
 def error():
 	print("File not selected")
 	messagebox.showerror('STL Visualiser Error', 'Error: Please select the file first!')
+
+
+def refresh():
+	filepath = ""
+	res.config(text=filepath)
 	
 root.mainloop()
